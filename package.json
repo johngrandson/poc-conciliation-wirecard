@@ -1,20 +1,29 @@
 {
-  "name": "json-server-boilerplate",
+  "name": "conciliation-wirecard",
   "version": "1.0.0",
-  "description": "json-server boilerplate",
-  "main": "server.js",
-  "scripts": {
-    "start": "babel-node src/index.js"
+  "description": "",
+  "main": "api.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^6.0.1",
+    "express": "^4.17.1",
+    "json-server": "^0.16.3",
+    "moment": "^2.29.1"
   },
-  "keywords": [
-    "json",
-    "server"
-  ],
-  "author": "Tomasz Bak",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-cli": "~6",
-    "babel-preset-es2015": "~6",
-    "json-server": "~0.8"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"nodemon api.js\" \"nodemon file-server.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johngrandson/poc-conciliation-wirecard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johngrandson/poc-conciliation-wirecard/issues"
+  },
+  "homepage": "https://github.com/johngrandson/poc-conciliation-wirecard#readme"
 }
