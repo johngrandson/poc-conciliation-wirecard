@@ -1,0 +1,1899 @@
+{
+  "id": "REC-MF2X504R7YTH",
+  "createdAt": "2021-04-09T16:04:35.722-03",
+  "type": "SALES",
+  "authorizedPayments": {
+    "summary": {
+      "count": 14,
+      "amount": 524000
+    },
+    "resources": [
+      {
+        "id": "PAY-596A5XD11Q93",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 50000,
+          "gross": 50000,
+          "fees": 2814,
+          "refunds": 0,
+          "liquid": 47186,
+          "currency": "BRL"
+        },
+        "installmentCount": 1,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-WWX4X7CYDNYR",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1984-01-07",
+              "birthDate": "1984-01-07",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "22986949827"
+              },
+              "fullname": "TESTE COBASI"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 2814
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-JX2V8KHMY10C",
+            "status": "RELEASED",
+            "amount": 50000,
+            "createdAt": "2021-04-08T10:51:38.000-03",
+            "updatedAt": "2021-04-08T10:51:38.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-JX2V8KHMY10C"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-KASAJVQZI7DK",
+                "title": "ORD-KASAJVQZI7DK"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-596A5XD11Q93",
+                "title": "PAY-596A5XD11Q93"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T12:00:50.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 2814,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-596A5XD11Q93"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-KASAJVQZI7DK",
+            "title": "ORD-KASAJVQZI7DK"
+          }
+        },
+        "createdAt": "2021-04-08T10:51:38.000-03",
+        "updatedAt": "2021-04-08T12:00:50.000-03"
+      },
+      {
+        "id": "PAY-596A5XD11Q93",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 50000,
+          "gross": 50000,
+          "fees": 2814,
+          "refunds": 0,
+          "liquid": 47186,
+          "currency": "BRL"
+        },
+        "installmentCount": 1,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-WWX4X7CYDNYR",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1984-01-07",
+              "birthDate": "1984-01-07",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "22986949827"
+              },
+              "fullname": "TESTE COBASI"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 2814
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-JX2V8KHMY10C",
+            "status": "RELEASED",
+            "amount": 50000,
+            "createdAt": "2021-04-08T10:51:38.000-03",
+            "updatedAt": "2021-04-08T10:51:38.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-JX2V8KHMY10C"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-KASAJVQZI7DK",
+                "title": "ORD-KASAJVQZI7DK"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-596A5XD11Q93",
+                "title": "PAY-596A5XD11Q93"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T12:00:50.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 2814,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-596A5XD11Q93"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-KASAJVQZI7DK",
+            "title": "ORD-KASAJVQZI7DK"
+          }
+        },
+        "createdAt": "2021-04-08T10:51:38.000-03",
+        "updatedAt": "2021-04-08T12:00:50.000-03"
+      },
+      {
+        "id": "PAY-SDVXQC6RIIFL",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 50000,
+          "gross": 50000,
+          "fees": 5064,
+          "refunds": 0,
+          "liquid": 44936,
+          "currency": "BRL"
+        },
+        "installmentCount": 2,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-WWX4X7CYDNYR",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1984-01-07",
+              "birthDate": "1984-01-07",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "22986949827"
+              },
+              "fullname": "TESTE COBASI"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 2814
+          },
+          {
+            "type": "PRE_PAYMENT",
+            "amount": 2250
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-FL35ZZ1NDOS2",
+            "status": "RELEASED",
+            "amount": 50000,
+            "createdAt": "2021-04-08T10:53:39.000-03",
+            "updatedAt": "2021-04-08T10:53:39.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-FL35ZZ1NDOS2"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-VD98BYZ5L0JL",
+                "title": "ORD-VD98BYZ5L0JL"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-SDVXQC6RIIFL",
+                "title": "PAY-SDVXQC6RIIFL"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T12:28:58.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 5064,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-SDVXQC6RIIFL"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-VD98BYZ5L0JL",
+            "title": "ORD-VD98BYZ5L0JL"
+          }
+        },
+        "createdAt": "2021-04-08T10:53:39.000-03",
+        "updatedAt": "2021-04-08T12:28:58.000-03"
+      },
+      {
+        "id": "PAY-SDVXQC6RIIFL",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 50000,
+          "gross": 50000,
+          "fees": 5064,
+          "refunds": 0,
+          "liquid": 44936,
+          "currency": "BRL"
+        },
+        "installmentCount": 2,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-WWX4X7CYDNYR",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1984-01-07",
+              "birthDate": "1984-01-07",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "22986949827"
+              },
+              "fullname": "TESTE COBASI"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 2814
+          },
+          {
+            "type": "PRE_PAYMENT",
+            "amount": 2250
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-FL35ZZ1NDOS2",
+            "status": "RELEASED",
+            "amount": 50000,
+            "createdAt": "2021-04-08T10:53:39.000-03",
+            "updatedAt": "2021-04-08T10:53:39.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-FL35ZZ1NDOS2"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-VD98BYZ5L0JL",
+                "title": "ORD-VD98BYZ5L0JL"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-SDVXQC6RIIFL",
+                "title": "PAY-SDVXQC6RIIFL"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T12:28:58.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 5064,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-SDVXQC6RIIFL"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-VD98BYZ5L0JL",
+            "title": "ORD-VD98BYZ5L0JL"
+          }
+        },
+        "createdAt": "2021-04-08T10:53:39.000-03",
+        "updatedAt": "2021-04-08T12:28:58.000-03"
+      },
+      {
+        "id": "PAY-5Z82DT28XU49",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 50000,
+          "gross": 50000,
+          "fees": 5314,
+          "refunds": 0,
+          "liquid": 44686,
+          "currency": "BRL"
+        },
+        "installmentCount": 3,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-WWX4X7CYDNYR",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1984-01-07",
+              "birthDate": "1984-01-07",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "22986949827"
+              },
+              "fullname": "TESTE COBASI"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 2814
+          },
+          {
+            "type": "PRE_PAYMENT",
+            "amount": 2500
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-GJ0VNASBVWQ2",
+            "status": "RELEASED",
+            "amount": 50000,
+            "createdAt": "2021-04-08T10:58:47.000-03",
+            "updatedAt": "2021-04-08T10:58:47.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-GJ0VNASBVWQ2"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-R212K4QXGHDT",
+                "title": "ORD-R212K4QXGHDT"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-5Z82DT28XU49",
+                "title": "PAY-5Z82DT28XU49"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T12:29:11.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 5314,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-5Z82DT28XU49"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-R212K4QXGHDT",
+            "title": "ORD-R212K4QXGHDT"
+          }
+        },
+        "createdAt": "2021-04-08T10:58:47.000-03",
+        "updatedAt": "2021-04-08T12:29:11.000-03"
+      },
+      {
+        "id": "PAY-5Z82DT28XU49",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 50000,
+          "gross": 50000,
+          "fees": 5314,
+          "refunds": 0,
+          "liquid": 44686,
+          "currency": "BRL"
+        },
+        "installmentCount": 3,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-WWX4X7CYDNYR",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1984-01-07",
+              "birthDate": "1984-01-07",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "22986949827"
+              },
+              "fullname": "TESTE COBASI"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 2814
+          },
+          {
+            "type": "PRE_PAYMENT",
+            "amount": 2500
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-GJ0VNASBVWQ2",
+            "status": "RELEASED",
+            "amount": 50000,
+            "createdAt": "2021-04-08T10:58:47.000-03",
+            "updatedAt": "2021-04-08T10:58:47.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-GJ0VNASBVWQ2"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-R212K4QXGHDT",
+                "title": "ORD-R212K4QXGHDT"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-5Z82DT28XU49",
+                "title": "PAY-5Z82DT28XU49"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T12:29:11.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 5314,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-5Z82DT28XU49"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-R212K4QXGHDT",
+            "title": "ORD-R212K4QXGHDT"
+          }
+        },
+        "createdAt": "2021-04-08T10:58:47.000-03",
+        "updatedAt": "2021-04-08T12:29:11.000-03"
+      },
+      {
+        "id": "PAY-T6T3NNOPXH1U",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 50000,
+          "gross": 50000,
+          "fees": 2814,
+          "refunds": 0,
+          "liquid": 47186,
+          "currency": "BRL"
+        },
+        "installmentCount": 1,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-WWX4X7CYDNYR",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1984-01-07",
+              "birthDate": "1984-01-07",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "22986949827"
+              },
+              "fullname": "TESTE COBASI"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 2814
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-Z3X9ZLXVHMR7",
+            "status": "HOLD_PENDING",
+            "amount": 50000,
+            "createdAt": "2021-04-08T11:00:32.000-03",
+            "updatedAt": "2021-04-08T11:00:32.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-Z3X9ZLXVHMR7"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-FQ1XZCLP1WBF",
+                "title": "ORD-FQ1XZCLP1WBF"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-T6T3NNOPXH1U",
+                "title": "PAY-T6T3NNOPXH1U"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T12:29:23.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 2814,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-T6T3NNOPXH1U"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-FQ1XZCLP1WBF",
+            "title": "ORD-FQ1XZCLP1WBF"
+          }
+        },
+        "createdAt": "2021-04-08T11:00:32.000-03",
+        "updatedAt": "2021-04-08T12:29:23.000-03"
+      },
+      {
+        "id": "PAY-T6T3NNOPXH1U",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 50000,
+          "gross": 50000,
+          "fees": 2814,
+          "refunds": 0,
+          "liquid": 47186,
+          "currency": "BRL"
+        },
+        "installmentCount": 1,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-WWX4X7CYDNYR",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1984-01-07",
+              "birthDate": "1984-01-07",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "22986949827"
+              },
+              "fullname": "TESTE COBASI"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 2814
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-Z3X9ZLXVHMR7",
+            "status": "HOLD_PENDING",
+            "amount": 50000,
+            "createdAt": "2021-04-08T11:00:32.000-03",
+            "updatedAt": "2021-04-08T11:00:32.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-Z3X9ZLXVHMR7"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-FQ1XZCLP1WBF",
+                "title": "ORD-FQ1XZCLP1WBF"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-T6T3NNOPXH1U",
+                "title": "PAY-T6T3NNOPXH1U"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T12:29:23.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 2814,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-T6T3NNOPXH1U"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-FQ1XZCLP1WBF",
+            "title": "ORD-FQ1XZCLP1WBF"
+          }
+        },
+        "createdAt": "2021-04-08T11:00:32.000-03",
+        "updatedAt": "2021-04-08T12:29:23.000-03"
+      },
+      {
+        "id": "PAY-T3HWFIB50VUQ",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 50000,
+          "gross": 50000,
+          "fees": 5064,
+          "refunds": 0,
+          "liquid": 44936,
+          "currency": "BRL"
+        },
+        "installmentCount": 2,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-WWX4X7CYDNYR",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1984-01-07",
+              "birthDate": "1984-01-07",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "22986949827"
+              },
+              "fullname": "TESTE COBASI"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 2814
+          },
+          {
+            "type": "PRE_PAYMENT",
+            "amount": 2250
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-DMJPG0ENW3KQ",
+            "status": "HOLD_PENDING",
+            "amount": 50000,
+            "createdAt": "2021-04-08T11:01:36.000-03",
+            "updatedAt": "2021-04-08T11:01:36.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-DMJPG0ENW3KQ"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-Q4LHKRVAKX46",
+                "title": "ORD-Q4LHKRVAKX46"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-T3HWFIB50VUQ",
+                "title": "PAY-T3HWFIB50VUQ"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T12:29:32.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 5064,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-T3HWFIB50VUQ"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-Q4LHKRVAKX46",
+            "title": "ORD-Q4LHKRVAKX46"
+          }
+        },
+        "createdAt": "2021-04-08T11:01:36.000-03",
+        "updatedAt": "2021-04-08T12:29:32.000-03"
+      },
+      {
+        "id": "PAY-T3HWFIB50VUQ",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 50000,
+          "gross": 50000,
+          "fees": 5064,
+          "refunds": 0,
+          "liquid": 44936,
+          "currency": "BRL"
+        },
+        "installmentCount": 2,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-WWX4X7CYDNYR",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1984-01-07",
+              "birthDate": "1984-01-07",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "22986949827"
+              },
+              "fullname": "TESTE COBASI"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 2814
+          },
+          {
+            "type": "PRE_PAYMENT",
+            "amount": 2250
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-DMJPG0ENW3KQ",
+            "status": "HOLD_PENDING",
+            "amount": 50000,
+            "createdAt": "2021-04-08T11:01:36.000-03",
+            "updatedAt": "2021-04-08T11:01:36.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-DMJPG0ENW3KQ"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-Q4LHKRVAKX46",
+                "title": "ORD-Q4LHKRVAKX46"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-T3HWFIB50VUQ",
+                "title": "PAY-T3HWFIB50VUQ"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T12:29:32.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 5064,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 25000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-T3HWFIB50VUQ"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-Q4LHKRVAKX46",
+            "title": "ORD-Q4LHKRVAKX46"
+          }
+        },
+        "createdAt": "2021-04-08T11:01:36.000-03",
+        "updatedAt": "2021-04-08T12:29:32.000-03"
+      },
+      {
+        "id": "PAY-4MGSJGYSMHP7",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 6000,
+          "gross": 6000,
+          "fees": 398,
+          "refunds": 0,
+          "liquid": 5602,
+          "currency": "BRL"
+        },
+        "installmentCount": 1,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-SG4VUNMNNMA2",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1991-04-12",
+              "birthDate": "1991-04-12",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "42494201837"
+              },
+              "fullname": "Raphael de Falco Ayres"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 398
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-GZU2S5VZKVS1",
+            "status": "RELEASED",
+            "amount": 6000,
+            "createdAt": "2021-04-08T16:44:50.000-03",
+            "updatedAt": "2021-04-08T16:44:50.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-GZU2S5VZKVS1"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-PUEDZ0Z4SQML",
+                "title": "ORD-PUEDZ0Z4SQML"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-4MGSJGYSMHP7",
+                "title": "PAY-4MGSJGYSMHP7"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T16:46:08.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 398,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 3000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 3000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-4MGSJGYSMHP7"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-PUEDZ0Z4SQML",
+            "title": "ORD-PUEDZ0Z4SQML"
+          }
+        },
+        "createdAt": "2021-04-08T16:44:50.000-03",
+        "updatedAt": "2021-04-08T16:46:08.000-03"
+      },
+      {
+        "id": "PAY-4MGSJGYSMHP7",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 6000,
+          "gross": 6000,
+          "fees": 398,
+          "refunds": 0,
+          "liquid": 5602,
+          "currency": "BRL"
+        },
+        "installmentCount": 1,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-SG4VUNMNNMA2",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1991-04-12",
+              "birthDate": "1991-04-12",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "42494201837"
+              },
+              "fullname": "Raphael de Falco Ayres"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 398
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-GZU2S5VZKVS1",
+            "status": "RELEASED",
+            "amount": 6000,
+            "createdAt": "2021-04-08T16:44:50.000-03",
+            "updatedAt": "2021-04-08T16:44:50.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-GZU2S5VZKVS1"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-PUEDZ0Z4SQML",
+                "title": "ORD-PUEDZ0Z4SQML"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-4MGSJGYSMHP7",
+                "title": "PAY-4MGSJGYSMHP7"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T16:46:08.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 398,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 3000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 3000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-4MGSJGYSMHP7"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-PUEDZ0Z4SQML",
+            "title": "ORD-PUEDZ0Z4SQML"
+          }
+        },
+        "createdAt": "2021-04-08T16:44:50.000-03",
+        "updatedAt": "2021-04-08T16:46:08.000-03"
+      },
+      {
+        "id": "PAY-2O1VSE9B7WED",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 6000,
+          "gross": 6000,
+          "fees": 398,
+          "refunds": 0,
+          "liquid": 5602,
+          "currency": "BRL"
+        },
+        "installmentCount": 1,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-LKRMZWL122LD",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1991-05-31",
+              "birthDate": "1991-05-31",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "07330174440"
+              },
+              "fullname": "JOAO BATISTA M NETTO"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 398
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-EMVLFT6X7S8M",
+            "status": "RELEASED",
+            "amount": 6000,
+            "createdAt": "2021-04-08T18:56:22.000-03",
+            "updatedAt": "2021-04-08T18:56:22.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-EMVLFT6X7S8M"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-Y915OTHDY7AS",
+                "title": "ORD-Y915OTHDY7AS"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-2O1VSE9B7WED",
+                "title": "PAY-2O1VSE9B7WED"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T18:59:48.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 398,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 3000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 3000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-2O1VSE9B7WED"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-Y915OTHDY7AS",
+            "title": "ORD-Y915OTHDY7AS"
+          }
+        },
+        "createdAt": "2021-04-08T18:56:22.000-03",
+        "updatedAt": "2021-04-08T18:59:48.000-03"
+      },
+      {
+        "id": "PAY-2O1VSE9B7WED",
+        "status": "AUTHORIZED",
+        "delayCapture": true,
+        "amount": {
+          "total": 6000,
+          "gross": 6000,
+          "fees": 398,
+          "refunds": 0,
+          "liquid": 5602,
+          "currency": "BRL"
+        },
+        "installmentCount": 1,
+        "fundingInstrument": {
+          "creditCard": {
+            "id": "CRC-LKRMZWL122LD",
+            "brand": "MASTERCARD",
+            "first6": "555566",
+            "last4": "8884",
+            "store": true,
+            "holder": {
+              "birthdate": "1991-05-31",
+              "birthDate": "1991-05-31",
+              "taxDocument": {
+                "type": "CPF",
+                "number": "07330174440"
+              },
+              "fullname": "JOAO BATISTA M NETTO"
+            }
+          },
+          "method": "CREDIT_CARD"
+        },
+        "acquirerDetails": {
+          "authorizationNumber": "T12996",
+          "taxDocument": {
+            "type": "CNPJ",
+            "number": "01027058000191"
+          }
+        },
+        "fees": [
+          {
+            "type": "TRANSACTION",
+            "amount": 398
+          }
+        ],
+        "escrows": [
+          {
+            "id": "ECW-EMVLFT6X7S8M",
+            "status": "RELEASED",
+            "amount": 6000,
+            "createdAt": "2021-04-08T18:56:22.000-03",
+            "updatedAt": "2021-04-08T18:56:22.000-03",
+            "_links": {
+              "self": {
+                "href": "https://sandbox.moip.com.br/v2/escrows/ECW-EMVLFT6X7S8M"
+              },
+              "order": {
+                "href": "https://sandbox.moip.com.br/v2/orders/ORD-Y915OTHDY7AS",
+                "title": "ORD-Y915OTHDY7AS"
+              },
+              "payment": {
+                "href": "https://sandbox.moip.com.br/v2/payments/PAY-2O1VSE9B7WED",
+                "title": "PAY-2O1VSE9B7WED"
+              }
+            }
+          }
+        ],
+        "events": [
+          {
+            "type": "PAYMENT.AUTHORIZED",
+            "createdAt": "2021-04-08T18:59:48.000-03"
+          }
+        ],
+        "receivers": [
+          {
+            "moipAccount": {
+              "id": "MPA-4C55165A593A",
+              "login": "raphaeldefalcoayres@gmail.com",
+              "fullname": "Raphael de Falco Ayres"
+            },
+            "type": "PRIMARY",
+            "amount": {
+              "total": 0,
+              "currency": "BRL",
+              "fees": 398,
+              "refunds": 0
+            },
+            "feePayor": true
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-EF9934E5E1E7",
+              "login": "douglas.muraoka@unifesp.br",
+              "fullname": "ASPEN"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 3000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          },
+          {
+            "moipAccount": {
+              "id": "MPA-A9F95D38CF64",
+              "login": "muraoka.douglas@gmail.com",
+              "fullname": "Rossi da Silva"
+            },
+            "type": "SECONDARY",
+            "amount": {
+              "total": 3000,
+              "currency": "BRL",
+              "fees": 0,
+              "refunds": 0
+            },
+            "feePayor": false
+          }
+        ],
+        "_links": {
+          "self": {
+            "href": "https://sandbox.moip.com.br/v2/payments/PAY-2O1VSE9B7WED"
+          },
+          "order": {
+            "href": "https://sandbox.moip.com.br/v2/orders/ORD-Y915OTHDY7AS",
+            "title": "ORD-Y915OTHDY7AS"
+          }
+        },
+        "createdAt": "2021-04-08T18:56:22.000-03",
+        "updatedAt": "2021-04-08T18:59:48.000-03"
+      }
+    ]
+  },
+  "reversedPayments": {
+    "summary": {
+      "count": 0,
+      "amount": 0
+    },
+    "resources": []
+  },
+  "refundedPayments": {
+    "summary": {
+      "count": 0,
+      "amount": 0
+    },
+    "resources": []
+  }
+}

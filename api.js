@@ -2,7 +2,8 @@ const { default: axios } = require("axios");
 const express = require("express");
 const moment = require("moment");
 const app = express();
-const db = require("./responses");
+const sales = require("./data/sales");
+const financials = require("./data/financials");
 
 const downloadData = (data, res) => {
   const json = JSON.stringify(data);
@@ -18,17 +19,18 @@ const downloadData = (data, res) => {
 app.get("/sales/:date", async (req, res, next) => {
   try {
     const { params } = req;
-    const { sales } = db;
 
     const found =
       params.date === moment(sales.date).format("YYYYMMDD") ? true : false;
 
     if (found) {
-      const { data } = await axios.get("http://localhost:3011/sales-response");
+      const { data } = await axios.get(
+        `http://localhost:3011/sales/${params.date}`
+      );
 
       return downloadData(data, res);
     } else {
-      res.json({ message: "Nothing found!" });
+      res.json({ statusCode: 404, message: "Nothing found!" });
     }
   } catch (error) {
     console.log(`error`, error);
@@ -37,21 +39,23 @@ app.get("/sales/:date", async (req, res, next) => {
 
 app.get("/financials", async (req, res, next) => {
   try {
-    const { query } = req;
-    const { financials } = db;
+    const found = financials.filter(
+      (x) =>
+        x.eventsCreatedAt ===
+        moment(req.query.eventsCreatedAt).format("YYYY-MM-DD")
+    );
 
-    const found =
-      query.eventsCreatedAt === financials.eventsCreatedAt ? true : false;
-
-    if (found) {
+    if (found.length > 0) {
       const { data } = await axios.get(
-        "http://localhost:3011/financials-response"
+        `http://localhost:3011/financials?eventsCreatedAt=${req.query.eventsCreatedAt}`
       );
 
-      return downloadData(data, res);
-    } else {
-      res.json({ message: "Nothing found!" });
+      if (data.length > 0) {
+        return downloadData(...data, res);
+      }
     }
+
+    res.json({ statusCode: 404, message: "Nothing found!" });
   } catch (error) {
     console.log(`error`, error);
   }
