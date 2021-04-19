@@ -46,9 +46,9 @@ Data no formato **YYYYMMDD**.
 ##
 
 ### GET - Obter Arquivo Financeiro
-**Path params:**
-**date*** ```date```
-Data no formato **YYYYMMDD**.
+**Query params:**
+**eventsCreatedAt*** ```date```
+Data referente à liquidação dos lançamentos financeiros. Formato: **YYYY-MM-DD**.
 
 **exemplo**: http://localhost:3010/financials?eventsCreatedAt=2021-04-05
 
