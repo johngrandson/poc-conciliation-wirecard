@@ -33,9 +33,9 @@ app.get("/sales/:date", async (req, res, next) => {
       );
 
       data = {
-        id: "REC-C0NC1L1VT10N",
-        date: "2016-10-13", //Data de criação do arquivo de vendas
-        type: "SALES",
+        id: sale.id,
+        date: moment(sale.createdAt).format("YYYY-MM-DD"), //Data de criação do arquivo de vendas
+        type: sale.type,
         _links: {
           file: `http://localhost:3010/sales/download/${moipAccount}/${params.date}/${sale.id}.json`, //Link para download do arquivo de vendas em Json
         },
