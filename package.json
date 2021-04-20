@@ -13,8 +13,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postbuild": "npm install nodemon -g && npm install concurrently -g",
-    "start": "concurrently \"nodemon api.js\" \"nodemon file-server.js\""
+    "dev": "concurrently \"nodemon api.js\" \"nodemon file-server.js\"",
+    "start": "npm i concurrently -g && concurrently \"node api.js\" \"node file-server.js\""
   },
   "repository": {
     "type": "git",
