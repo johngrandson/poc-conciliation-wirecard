@@ -1,21 +1,10 @@
-const { default: axios } = require("axios");
+require('dotenv').config()
 const express = require("express");
 const moment = require("moment");
 const app = express();
 const sales = require("./data/sales");
 const financials = require("./data/financials");
 const moipAccount = "MPA-4C55165A593A";
-
-const downloadData = (data, res) => {
-  // const json = JSON.stringify(data);
-  // const filename = `${data.id}-${moment(
-  //   data.date || data.eventsCreatedAt
-  // ).format("YYYYMMDD")}.json`;
-
-  // res.setHeader("Content-Type", "application/json");
-  // res.setHeader("Content-disposition", "attachment; filename=" + filename);
-  res.json(data);
-};
 
 app.get("/sales/:date", async (req, res, next) => {
   try {
@@ -30,7 +19,7 @@ app.get("/sales/:date", async (req, res, next) => {
         date: moment(found.createdAt).format("YYYY-MM-DD"), //Data de criação do arquivo de vendas
         type: found.type,
         _links: {
-          file: `http://localhost:3010/sales/download/${moipAccount}/${params.date}/${found.id}.json`, //Link para download do arquivo de vendas em Json
+          file: `${process.env.API_URL}/sales/download/${moipAccount}/${params.date}/${found.id}.json`, //Link para download do arquivo de vendas em Json
         },
       };
 
@@ -48,34 +37,26 @@ app.get("/sales/:date", async (req, res, next) => {
 
 app.get("/financials", async (req, res, next) => {
   try {
-    const found = financials.filter(
+    const [found] = financials.filter(
       (x) =>
         x.eventsCreatedAt ===
         moment(req.query.eventsCreatedAt).format("YYYY-MM-DD")
     );
 
-    if (found.length > 0) {
-      let {
-        data: [financial],
-      } = await axios.get(
-        `http://localhost:3011/financials?eventsCreatedAt=${req.query.eventsCreatedAt}`
-      );
-
+    if (found) {
       data = {
-        id: financial.id,
+        id: found.id,
         moipAccountId: moipAccount,
-        createdAt: financial.createdAt, // Data de criação do arquivo financeiro
-        eventsCreatedAt: financial.eventsCreatedAt, // Data da liquidação dos lançamentos financeiros
-        type: financial.type,
-        count: financial.settledEntries.summary.count, // Quantidade de lançamentos financeiros liquidados presentes no arquivo
+        createdAt: found.createdAt, // Data de criação do arquivo financeiro
+        eventsCreatedAt: found.eventsCreatedAt, // Data da liquidação dos lançamentos financeiros
+        type: found.type,
+        count: found.settledEntries.summary.count, // Quantidade de lançamentos financeiros liquidados presentes no arquivo
         _links: {
-          file: `http://localhost:3010/financials/download/${moipAccount}/${req.query.eventsCreatedAt}/${financial.id}.json`, // Link para download do arquivo financeiro em Json
+          file: `${process.env.API_URL}/financials/download/${moipAccount}/${req.query.eventsCreatedAt}/${found.id}.json`, // Link para download do arquivo financeiro em Json
         },
       };
 
-      if (financial) {
-        return res.json(data);
-      }
+      return res.json(data);
     }
 
     res.json({ statusCode: 404, message: "Nothing found!" });
@@ -96,7 +77,7 @@ app.get(
       );
 
       if (found.length > 0) {
-        return downloadData(found, res);
+        return res.json(found);
       }
     } catch (error) {
       console.log(`error`, error);
@@ -112,7 +93,7 @@ app.get(
         (x) => moment(x.createdAt).format("YYYYMMDD") === req.params.createdAt
       );
       if (found) {
-        return downloadData(found, res);
+        return res.json(found);
       } else {
         return res.json({ statusCode: 404, message: "Nothing found" });
       }
