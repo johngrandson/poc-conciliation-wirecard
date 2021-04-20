@@ -7,14 +7,14 @@ const financials = require("./data/financials");
 const moipAccount = "MPA-4C55165A593A";
 
 const downloadData = (data, res) => {
-  const json = JSON.stringify(data);
-  const filename = `${data.id}-${moment(
-    data.date || data.eventsCreatedAt
-  ).format("YYYYMMDD")}.json`;
+  // const json = JSON.stringify(data);
+  // const filename = `${data.id}-${moment(
+  //   data.date || data.eventsCreatedAt
+  // ).format("YYYYMMDD")}.json`;
 
-  res.setHeader("Content-Type", "application/json");
-  res.setHeader("Content-disposition", "attachment; filename=" + filename);
-  res.send(json);
+  // res.setHeader("Content-Type", "application/json");
+  // res.setHeader("Content-disposition", "attachment; filename=" + filename);
+  res.json(data);
 };
 
 app.get("/sales/:date", async (req, res, next) => {
@@ -24,26 +24,17 @@ app.get("/sales/:date", async (req, res, next) => {
     const [found] = sales.filter(
       (x) => moment(x.createdAt).format("YYYYMMDD") === params.date
     );
-
     if (found) {
-      let {
-        data: [sale],
-      } = await axios.get(
-        `http://localhost:3011/sales?createdAt=${found.createdAt}`
-      );
-
       data = {
-        id: sale.id,
-        date: moment(sale.createdAt).format("YYYY-MM-DD"), //Data de criação do arquivo de vendas
-        type: sale.type,
+        id: found.id,
+        date: moment(found.createdAt).format("YYYY-MM-DD"), //Data de criação do arquivo de vendas
+        type: found.type,
         _links: {
-          file: `http://localhost:3010/sales/download/${moipAccount}/${params.date}/${sale.id}.json`, //Link para download do arquivo de vendas em Json
+          file: `http://localhost:3010/sales/download/${moipAccount}/${params.date}/${found.id}.json`, //Link para download do arquivo de vendas em Json
         },
       };
 
-      if (sale) {
-        return res.json(data);
-      }
+      return res.json(data);
     } else {
       return res.json({ statusCode: 404, message: "Nothing found!" });
     }
@@ -105,15 +96,7 @@ app.get(
       );
 
       if (found.length > 0) {
-        let {
-          data: [payload],
-        } = await axios.get(
-          `http://localhost:3011/financials?eventsCreatedAt=${req.params.eventsCreatedAt}`
-        );
-
-        if (payload) {
-          return downloadData(payload, res);
-        }
+        return downloadData(found, res);
       }
     } catch (error) {
       console.log(`error`, error);
@@ -128,17 +111,10 @@ app.get(
       const [found] = sales.filter(
         (x) => moment(x.createdAt).format("YYYYMMDD") === req.params.createdAt
       );
-
       if (found) {
-        let {
-          data: [payload],
-        } = await axios.get(
-          `http://localhost:3011/sales?createdAt=${found.createdAt}`
-        );
-
-        if (payload) {
-          return downloadData(payload, res);
-        }
+        return downloadData(found, res);
+      } else {
+        return res.json({ statusCode: 404, message: "Nothing found" });
       }
     } catch (error) {
       console.log(`error`, error);

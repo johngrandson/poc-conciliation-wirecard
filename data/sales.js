@@ -1,8 +1,7 @@
 module.exports = [
   {
     id: "REC-DTL53BYBVCGV",
-    createdAt: "2021-04-09T16:03:14.817-03",
-    type: "SALES",
+    createdAt: "2021-04-07T16:03:14.817-03",
     authorizedPayments: {
       summary: {
         count: 4,
@@ -769,8 +768,8 @@ module.exports = [
               id: "ECW-OR0UXQERIWTV",
               status: "HOLD_PENDING",
               amount: 50000,
-              createdAt: "2021-04-09T15:31:10.000-03",
-              updatedAt: "2021-04-09T15:31:10.000-03",
+              createdAt: "2021-04-10T15:31:10.000-03",
+              updatedAt: "2021-04-10T15:31:10.000-03",
               _links: {
                 self: {
                   href:
@@ -873,7 +872,7 @@ module.exports = [
   },
   {
     id: "REC-MF2X504R7YTH",
-    createdAt: "2021-04-09T16:04:35.722-03",
+    createdAt: "2021-04-08T16:04:35.722-03",
     type: "SALES",
     authorizedPayments: {
       summary: {
@@ -2814,7 +2813,7 @@ module.exports = [
   },
   {
     id: "REC-TFCBD9NINDKB",
-    createdAt: "2021-04-09T16:00:47.199-03",
+    createdAt: "2021-04-05T16:00:47.199-03",
     type: "SALES",
     authorizedPayments: {
       summary: {
