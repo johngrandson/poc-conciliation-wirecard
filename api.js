@@ -13,6 +13,7 @@ app.get("/sales/:date", async (req, res, next) => {
     const [found] = sales.filter(
       (x) => moment(x.createdAt).format("YYYYMMDD") === params.date
     );
+    console.log(`found`, found)
     if (found) {
       data = {
         id: found.id,
@@ -22,7 +23,7 @@ app.get("/sales/:date", async (req, res, next) => {
           file: `${process.env.API_URL}/sales/download/${moipAccount}/${params.date}/${found.id}.json`, //Link para download do arquivo de vendas em Json
         },
       };
-
+      console.log(`data`, data)
       return res.json(data);
     } else {
       return res.json({ statusCode: 404, message: "Nothing found!" });
