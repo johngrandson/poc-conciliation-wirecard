@@ -384,6 +384,390 @@ module.exports = [
     },
   },
   {
+    id: "REC-4ZN2XVEUNILL",
+    type: "FINANCIALS",
+    moipAccountId: "MPA-4C55165A593A",
+    createdAt: "2021-04-09T16:37:31-0300",
+    eventsCreatedAt: "2021-04-06",
+    settledEntries: {
+      summary: {
+        count: 8,
+        amount: 1841,
+        netAmount: 0,
+      },
+      resources: [
+        {
+          id: 38658424,
+          externalId: "ENT-V3L0YNN5QX37",
+          description: "Cartao de credito - Pedido PAY-517LNW6JXANO",
+          moipAccount: {
+            account: "MPA-4C55165A593A",
+          },
+          grossAmount: 0,
+          liquidAmount: -426,
+          type: "CREDIT_CARD",
+          eventId: "PAY-517LNW6JXANO",
+          createdAt: "2021-04-06T09:32:17-0300",
+          updatedAt: "2021-04-06T09:33:08-0300",
+          settledAt: "2021-04-06T09:33:08-0300",
+          scheduledFor: "2021-04-20T00:00:00-0300",
+          fees: [
+            {
+              amount: 426,
+              type: "TRANSACTION",
+            },
+          ],
+          references: [
+            {
+              type: "ORDER",
+              value: "ORD-3AMWZJ22OLSE",
+            },
+            {
+              type: "OWN_ID",
+              value: "606c53637f965e001e403616",
+            },
+            {
+              type: "PAYMENT",
+              value: "PAY-517LNW6JXANO",
+            },
+            {
+              type: "REFUND",
+              value: "REF-0HIMFKIH4GX5",
+            },
+          ],
+          installment: {
+            amount: 1,
+            number: 1,
+          },
+          status: "SETTLED",
+          reschedule: [],
+        },
+        {
+          id: 38658449,
+          externalId: "ENT-RNEIGOPP5MHB",
+          description: "Cartao de credito - Pedido PAY-7TUQCENHP9Z6",
+          moipAccount: {
+            account: "MPA-4C55165A593A",
+          },
+          grossAmount: 0,
+          liquidAmount: -426,
+          type: "CREDIT_CARD",
+          eventId: "PAY-7TUQCENHP9Z6",
+          createdAt: "2021-04-06T09:35:55-0300",
+          updatedAt: "2021-04-06T09:36:32-0300",
+          settledAt: "2021-04-06T09:36:32-0300",
+          scheduledFor: "2021-04-20T00:00:00-0300",
+          fees: [
+            {
+              amount: 426,
+              type: "TRANSACTION",
+            },
+          ],
+          references: [
+            {
+              type: "ORDER",
+              value: "ORD-95RJPDH9FNKP",
+            },
+            {
+              type: "OWN_ID",
+              value: "606c55867f965e001e40361e",
+            },
+            {
+              type: "PAYMENT",
+              value: "PAY-7TUQCENHP9Z6",
+            },
+            {
+              type: "REFUND",
+              value: "REF-1800759KUVDG",
+            },
+          ],
+          installment: {
+            amount: 1,
+            number: 1,
+          },
+          status: "SETTLED",
+          reschedule: [],
+        },
+        {
+          id: 28658499,
+          externalId: "ENT-9FLKR2DB6ROD",
+          description: "Cartao de credito - Pedido PAY-1234",
+          moipAccount: {
+            account: "MPA-4C55165A593A",
+          },
+          grossAmount: 0,
+          liquidAmount: -563,
+          type: "CREDIT_CARD",
+          eventId: "PAY-1234",
+          createdAt: "2021-04-06T09:47:52-0300",
+          updatedAt: "2021-04-06T09:48:25-0300",
+          settledAt: "2021-04-06T09:48:25-0300",
+          scheduledFor: "2021-04-20T00:00:00-0300",
+          fees: [
+            {
+              amount: 563,
+              type: "TRANSACTION",
+            },
+          ],
+          references: [
+            {
+              type: "ORDER",
+              value: "ORD-GL6623TSFE62",
+            },
+            {
+              type: "OWN_ID",
+              value: "606c55d87f965e001e403620",
+            },
+            {
+              type: "PAYMENT",
+              value: "PAY-L8EQC06FT6D2",
+            },
+            {
+              type: "REFUND",
+              value: "REF-XIH90RC6QEON",
+            },
+          ],
+          installment: {
+            amount: 1,
+            number: 1,
+          },
+          status: "SETTLED",
+          reschedule: [],
+        },
+        {
+          id: 38659629,
+          externalId: "ENT-CHV3ZCFJTTAP",
+          description: "Cartao de credito - Pedido PAY-35PCI0DAVVRC",
+          moipAccount: {
+            account: "MPA-4C55165A593A",
+          },
+          grossAmount: 0,
+          liquidAmount: -426,
+          type: "CREDIT_CARD",
+          eventId: "PAY-35PCI0DAVVRC",
+          createdAt: "2021-04-06T19:07:33-0300",
+          updatedAt: "2021-04-06T19:07:40-0300",
+          settledAt: "2021-04-06T19:07:40-0300",
+          scheduledFor: "2021-04-20T00:00:00-0300",
+          fees: [
+            {
+              amount: 426,
+              type: "TRANSACTION",
+            },
+          ],
+          references: [
+            {
+              type: "ORDER",
+              value: "ORD-WNDDE22LHFKJ",
+            },
+            {
+              type: "OWN_ID",
+              value: "606cda54eec84f8883f5c154",
+            },
+            {
+              type: "PAYMENT",
+              value: "PAY-35PCI0DAVVRC",
+            },
+            {
+              type: "REFUND",
+              value: "REF-AU74Y8OG0MD0",
+            },
+          ],
+          installment: {
+            amount: 1,
+            number: 1,
+          },
+          status: "SETTLED",
+          reschedule: [],
+        },
+        {
+          id: 38658431,
+          externalId: "ENT-PBLLN4A29SUD",
+          description: "Reembolso do Pagamento PAY-517LNW6JXANO",
+          moipAccount: {
+            account: "MPA-4C55165A593A",
+          },
+          grossAmount: 426,
+          liquidAmount: 426,
+          type: "PAYMENT_REFUND",
+          eventId: "REF-0HIMFKIH4GX5",
+          createdAt: "2021-04-06T09:33:08-0300",
+          updatedAt: "2021-04-06T09:33:08-0300",
+          settledAt: "2021-04-06T09:33:08-0300",
+          scheduledFor: "2021-04-20T00:00:00-0300",
+          fees: [
+            {
+              amount: 0,
+              type: "UNKNOWN",
+            },
+          ],
+          references: [
+            {
+              type: "ORDER",
+              value: "ORD-3AMWZJ22OLSE",
+            },
+            {
+              type: "OWN_ID",
+              value: "606c53637f965e001e403616",
+            },
+            {
+              type: "PAYMENT",
+              value: "PAY-517LNW6JXANO",
+            },
+            {
+              type: "REFUND",
+              value: "REF-0HIMFKIH4GX5",
+            },
+          ],
+          installment: {
+            amount: 1,
+            number: 1,
+          },
+          status: "SETTLED",
+          reschedule: [],
+        },
+        {
+          id: 38658454,
+          externalId: "ENT-3U4904MIPIAR",
+          description: "Reembolso do Pagamento PAY-7TUQCENHP9Z6",
+          moipAccount: {
+            account: "MPA-4C55165A593A",
+          },
+          grossAmount: 426,
+          liquidAmount: 426,
+          type: "PAYMENT_REFUND",
+          eventId: "REF-1800759KUVDG",
+          createdAt: "2021-04-06T09:36:32-0300",
+          updatedAt: "2021-04-06T09:36:32-0300",
+          settledAt: "2021-04-06T09:36:32-0300",
+          scheduledFor: "2021-04-20T00:00:00-0300",
+          fees: [
+            {
+              amount: 0,
+              type: "UNKNOWN",
+            },
+          ],
+          references: [
+            {
+              type: "ORDER",
+              value: "ORD-95RJPDH9FNKP",
+            },
+            {
+              type: "OWN_ID",
+              value: "606c55867f965e001e40361e",
+            },
+            {
+              type: "PAYMENT",
+              value: "PAY-7TUQCENHP9Z6",
+            },
+            {
+              type: "REFUND",
+              value: "REF-1800759KUVDG",
+            },
+          ],
+          installment: {
+            amount: 1,
+            number: 1,
+          },
+          status: "SETTLED",
+          reschedule: [],
+        },
+        {
+          id: 38658495,
+          externalId: "ENT-RD2RB7N474ZJ",
+          description: "Reembolso do Pagamento PAY-L8EQC06FT6D2",
+          moipAccount: {
+            account: "MPA-4C55165A593A",
+          },
+          grossAmount: 563,
+          liquidAmount: 563,
+          type: "PAYMENT_REFUND",
+          eventId: "REF-XIH90RC6QEON",
+          createdAt: "2021-04-06T09:48:25-0300",
+          updatedAt: "2021-04-06T09:48:25-0300",
+          settledAt: "2021-04-06T09:48:25-0300",
+          scheduledFor: "2021-04-20T00:00:00-0300",
+          fees: [
+            {
+              amount: 0,
+              type: "UNKNOWN",
+            },
+          ],
+          references: [
+            {
+              type: "ORDER",
+              value: "ORD-GL6623TSFE62",
+            },
+            {
+              type: "OWN_ID",
+              value: "606c55d87f965e001e403620",
+            },
+            {
+              type: "PAYMENT",
+              value: "PAY-L8EQC06FT6D2",
+            },
+            {
+              type: "REFUND",
+              value: "REF-XIH90RC6QEON",
+            },
+          ],
+          installment: {
+            amount: 1,
+            number: 1,
+          },
+          status: "SETTLED",
+          reschedule: [],
+        },
+        {
+          id: 38659634,
+          externalId: "ENT-96OLCVQJGAFB",
+          description: "Reembolso do Pagamento PAY-35PCI0DAVVRC",
+          moipAccount: {
+            account: "MPA-4C55165A593A",
+          },
+          grossAmount: 426,
+          liquidAmount: 426,
+          type: "PAYMENT_REFUND",
+          eventId: "REF-AU74Y8OG0MD0",
+          createdAt: "2021-04-06T19:07:40-0300",
+          updatedAt: "2021-04-06T19:07:40-0300",
+          settledAt: "2021-04-06T19:07:40-0300",
+          scheduledFor: "2021-04-20T00:00:00-0300",
+          fees: [
+            {
+              amount: 0,
+              type: "UNKNOWN",
+            },
+          ],
+          references: [
+            {
+              type: "ORDER",
+              value: "ORD-WNDDE22LHFKJ",
+            },
+            {
+              type: "OWN_ID",
+              value: "606cda54eec84f8883f5c154",
+            },
+            {
+              type: "PAYMENT",
+              value: "PAY-35PCI0DAVVRC",
+            },
+            {
+              type: "REFUND",
+              value: "REF-AU74Y8OG0MD0",
+            },
+          ],
+          installment: {
+            amount: 1,
+            number: 1,
+          },
+          status: "SETTLED",
+          reschedule: [],
+        },
+      ],
+    },
+  },
+  {
     id: "REC-28CMIFE4OKYD",
     type: "FINANCIALS",
     moipAccountId: "MPA-4C55165A593A",
