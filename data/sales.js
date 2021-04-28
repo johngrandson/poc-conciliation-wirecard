@@ -9,6 +9,141 @@ module.exports = [
       },
       resources: [
         {
+          id: "PAY-123",
+          status: "AUTHORIZED",
+          delayCapture: true,
+          amount: {
+            total: 6000,
+            gross: 6000,
+            fees: 398,
+            refunds: 0,
+            liquid: 5602,
+            currency: "BRL",
+          },
+          installmentCount: 1,
+          fundingInstrument: {
+            creditCard: {
+              id: "CRC-SG4VUNMNNMA2",
+              brand: "MASTERCARD",
+              first6: "555566",
+              last4: "8884",
+              store: true,
+              holder: {
+                birthdate: "1991-04-12",
+                birthDate: "1991-04-12",
+                taxDocument: {
+                  type: "CPF",
+                  number: "42494201837",
+                },
+                fullname: "Raphael de Falco Ayres",
+              },
+            },
+            method: "CREDIT_CARD",
+          },
+          acquirerDetails: {
+            authorizationNumber: "T12996",
+            taxDocument: {
+              type: "CNPJ",
+              number: "01027058000191",
+            },
+          },
+          fees: [
+            {
+              type: "TRANSACTION",
+              amount: 398,
+            },
+          ],
+          escrows: [
+            {
+              id: "ECW-ZFXB5R1DQIE6",
+              status: "HOLD_PENDING",
+              amount: 6000,
+              createdAt: "2021-04-07T10:54:35.000-03",
+              updatedAt: "2021-04-07T10:54:35.000-03",
+              _links: {
+                self: {
+                  href:
+                    "https://sandbox.moip.com.br/v2/escrows/ECW-ZFXB5R1DQIE6",
+                },
+                order: {
+                  href:
+                    "https://sandbox.moip.com.br/v2/orders/ORD-LKCBD6YJ5UCA",
+                  title: "ORD-LKCBD6YJ5UCA",
+                },
+                payment: {
+                  href:
+                    "https://sandbox.moip.com.br/v2/payments/PAY-I99J0R15WWFG",
+                  title: "PAY-I99J0R15WWFG",
+                },
+              },
+            },
+          ],
+          events: [
+            {
+              type: "PAYMENT.AUTHORIZED",
+              createdAt: "2021-04-07T11:00:25.000-03",
+            },
+          ],
+          receivers: [
+            {
+              moipAccount: {
+                id: "MPA-4C55165A593A",
+                login: "raphaeldefalcoayres@gmail.com",
+                fullname: "Raphael de Falco Ayres",
+              },
+              type: "PRIMARY",
+              amount: {
+                total: 0,
+                currency: "BRL",
+                fees: 398,
+                refunds: 0,
+              },
+              feePayor: true,
+            },
+            {
+              moipAccount: {
+                id: "MPA-EF9934E5E1E7",
+                login: "douglas.muraoka@unifesp.br",
+                fullname: "ASPEN",
+              },
+              type: "SECONDARY",
+              amount: {
+                total: 3000,
+                currency: "BRL",
+                fees: 0,
+                refunds: 0,
+              },
+              feePayor: false,
+            },
+            {
+              moipAccount: {
+                id: "MPA-A9F95D38CF64",
+                login: "muraoka.douglas@gmail.com",
+                fullname: "Rossi da Silva",
+              },
+              type: "SECONDARY",
+              amount: {
+                total: 3000,
+                currency: "BRL",
+                fees: 0,
+                refunds: 0,
+              },
+              feePayor: false,
+            },
+          ],
+          _links: {
+            self: {
+              href: "https://sandbox.moip.com.br/v2/payments/PAY-I99J0R15WWFG",
+            },
+            order: {
+              href: "https://sandbox.moip.com.br/v2/orders/ORD-LKCBD6YJ5UCA",
+              title: "ORD-LKCBD6YJ5UCA",
+            },
+          },
+          createdAt: "2021-04-07T10:54:35.000-03",
+          updatedAt: "2021-04-07T11:00:25.000-03",
+        },
+        {
           id: "PAY-I99J0R15WWFG",
           status: "AUTHORIZED",
           delayCapture: true,
